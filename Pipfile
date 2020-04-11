@@ -1,0 +1,30 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+black = "*"
+
+[packages]
+flask = "*"
+flask-sqlalchemy = "*"
+flask-marshmallow = "*"
+marshmallow-sqlalchemy = "*"
+flask-restful = "*"
+pymysql = "*"
+flask-mail = "*"
+flask-cors = "*"
+flask-socketio = "*"
+jsonschema = "*"
+pyjwt = "*"
+gunicorn = "*"
+eventlet = "*"
+python-dotenv = "*"
+uuid = "*"
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true

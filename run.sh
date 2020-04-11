@@ -1,0 +1,1 @@
+GUNICORN_CMD_ARGS="--bind=0.0.0.0:5000 --worker-class eventlet -w 4 --log-level=debug --reload" gunicorn main:app
