@@ -1,4 +1,4 @@
-__author__ = 'Shaban Hassan [shaban00]'
+__author__ = 'Shaban Mohammedsaani Hassan [shaban00]'
 
 import os
 
@@ -12,7 +12,6 @@ class Config(object):
     MAIL_USE_SSL = True
     MAIL_USERNAME = ""
     MAIL_PASSWORD = ""
-
 
 
 class Development(Config):
