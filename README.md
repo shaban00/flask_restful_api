@@ -1,4 +1,4 @@
-# Flask Restful API project structure
+# Flask Restful API Project Structure
 
 ## Technologies used
 
@@ -10,7 +10,7 @@
 
 [x] **flask-socketio**
 
-A scalable project for building flask rest API.
+A scalable project structure for building flask Restful API.
 
 Any relational database can be configured with flask-sqlalchemy.
 
@@ -22,4 +22,4 @@ Project structure also supports real time features. Includes **flask-socketio** 
 
 Default serializer used in project is **flask-marshmallow**
 
-**Author**: Shaban Hassan **(@shaban00)**
+**Author**: Shaban Mohammedsaani Hassan **(@shaban00)**
