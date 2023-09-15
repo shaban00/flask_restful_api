@@ -1,4 +1,4 @@
-__author__ = 'Shaban Hassan [shaban00]'
+__author__ = 'Shaban Mohammedsaani Hassan [shaban00]'
 
 import datetime
 from app import db
