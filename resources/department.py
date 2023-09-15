@@ -1,4 +1,4 @@
-__author__ = 'Shaban Hassan [shaban00]'
+__author__ = 'Shaban Mohammedsaani Hassan [shaban00]'
 
 from flask import make_response, jsonify, request
 from flask_restful import Resource
