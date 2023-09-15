@@ -1,4 +1,4 @@
-__author__ = "Shaban Hassan"
+__author__ = 'Shaban Mohammedsaani Hassan [shaban00]'
 
 from typing import Dict
 from flask import Flask, request, jsonify
@@ -36,7 +36,9 @@ def handle_errors(error: BaseError) -> Dict:
         "error": error.to_dict()
     })
     response.status_code = error.error_code
+    
     return response
+
 
 @app.errorhandler(404)
 def url_not_found(error):
@@ -49,6 +51,7 @@ def url_not_found(error):
         }
     })
     response.status_code = 404
+    
     return response
 
 
@@ -63,6 +66,7 @@ def method_not_allowed(error):
         }
     })
     response.status_code = 405
+    
     return response
 
 
@@ -79,6 +83,7 @@ def handle_server_error(error):
         }
     })
     response.status_code = 500
+    
     return response
 
 
@@ -90,11 +95,11 @@ def after_request(response):
     :param response(flask_restful.Response): The response returned for the current request
     '''
     response.headers.add('Access-Control-Allow-Origin', '*')
-    response.headers.add('Access-Control-Allow-Methods',
-                         'POST, GET, OPTIONS, DELETE')
-    response.headers.add('Access-Control-Allow-Headers',
-                         'content-type, Authorization')
+    response.headers.add('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, DELETE')
+    response.headers.add('Access-Control-Allow-Headers', 'content-type, Authorization')
+    
     return response
+
 
 if __name__ == '__main__':
     socketio.run(app, port=5000, host='0.0.0.0')
