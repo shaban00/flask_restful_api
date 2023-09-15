@@ -1,4 +1,4 @@
-__author__ = 'Shaban Hassan [shaban00]'
+__author__ = 'Shaban Mohammedsaani Hassan [shaban00]'
 
 from typing import Callable
 import jsonschema
@@ -9,7 +9,6 @@ from utils.exceptions import JSONDataValidatorError
 
 
 def expect(schema_name: str = "", nested_in_data: bool = True, is_multiple: bool = False) -> Callable:
-
     def wrapper_func(func):
         @wraps(func)
         def decorated(*args, **kwargs):
