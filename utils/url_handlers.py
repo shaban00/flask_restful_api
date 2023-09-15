@@ -1,4 +1,4 @@
-__author__ = 'Shaban Hassan [shaban00]'
+__author__ = 'Shaban Mohammedsaani Hassan [shaban00]'
 
 from typing import Callable, Dict, List
 from flask import Flask
@@ -12,7 +12,6 @@ def add_api_resource(resource: Resource, urls: tuple, endpoint: str, api: Api) -
 
 
 def register_api_urls(api_urls: Dict, api: Api) -> None:
-
     for api_url in api_urls:
         add_api_resource(api_url.get("resource"), api_url.get("urls"), api_url.get("endpoint"), api)
 
@@ -22,7 +21,6 @@ def add_app_url(func: Callable, url: str, app: Flask, endpoint: str, method: Lis
 
 
 def register_app_urls(app_urls: List, app: Flask) -> None:
-    
     for app_url in app_urls:
         add_app_url(app_url.get("func"), app_url.get("url"), app, app_url.get("endpoint"), method=app_url.get("methods"))
 
