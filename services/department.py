@@ -1,5 +1,4 @@
-__author__ = 'Shaban Hassan [shaban00]'
-
+__author__ = 'Shaban Mohammedsaani Hassan [shaban00]'
 
 from app import db
 from models.department import Department
